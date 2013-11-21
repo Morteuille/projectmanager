@@ -18,4 +18,10 @@ class PmController extends Controller
    	
 	return $this->render('ProjectmanagerHomeBundle:Pm:seeProject.html.twig', array('id' => $id));
   }
+  
+  public function menuAction()
+  {  
+    return $this->render('ProjectmanagerHomeBundle:Pm:menu.html.twig');
+
+  }
 }
