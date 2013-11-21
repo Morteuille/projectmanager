@@ -7,9 +7,8 @@ vendor/*
 */cache/*
 web/uploads/*
 web/bundles/*
-/app/bootstrap*
 
 
 # Configuration files
-app/config/parameters.ini
-app/config/parameters.yml
+# app/config/parameters.ini
+# app/config/parameters.yml
