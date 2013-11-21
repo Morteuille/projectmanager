@@ -1,0 +1,6 @@
+projectmanager_homepage:
+    pattern:  /Projectmanager/
+    defaults: { _controller: ProjectmanagerHomeBundle:Pm:index }
+projectmanager_seeproject:
+    pattern:   /Projectmanager/project/{id}
+    defaults:  { _controller: ProjectmanagerHomeBundle:Pm:seeProject }

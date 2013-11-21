@@ -1,0 +1,4 @@
+projectmanager_home:
+    resource: "@ProjectmanagerHomeBundle/Resources/config/routing.yml"
+    prefix:   /
+
