@@ -24,4 +24,10 @@ class PmController extends Controller
     return $this->render('ProjectmanagerHomeBundle:Pm:menu.html.twig');
 
   }
+  
+  public function calendarAction()
+  {
+   	
+	return $this->render('ProjectmanagerHomeBundle:Pm:calendar.html.twig');
+  }
 }

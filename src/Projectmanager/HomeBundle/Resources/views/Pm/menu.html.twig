@@ -1,7 +1,142 @@
- <div class="sidebar" id="sidebar">
-  <ul>
-	<li>menu1</li>
-	<li>menu2</li>
-	<li>menu3</li>
-  </ul>
- </div>
+<div class="sidebar" id="sidebar">
+					<script type="text/javascript">
+						try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+					</script>
+
+					<ul class="nav nav-list">
+						<li class="active">
+							<a href="index.html">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text"> Dashboard </span>
+							</a>
+						</li>
+
+						<li>
+							<a href="typography.html">
+								<i class="icon-edit"></i>
+								<span class="menu-text"> New Project </span>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon-desktop"></i>
+								<span class="menu-text"> Projects List</span>
+
+								<b class="arrow icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="{{ path('projectmanager_seeproject', {'id': 1}) }}">
+										<i class="icon-double-angle-right"></i>
+										Project 1
+									</a>
+								</li>
+
+								<li>
+									<a href="buttons.html">
+										<i class="icon-double-angle-right"></i>
+										Buttons &amp; Icons
+									</a>
+								</li>
+
+								<li>
+									<a href="treeview.html">
+										<i class="icon-double-angle-right"></i>
+										Treeview
+									</a>
+								</li>
+
+								<li>
+									<a href="jquery-ui.html">
+										<i class="icon-double-angle-right"></i>
+										jQuery UI
+									</a>
+								</li>
+
+								<li>
+									<a href="nestable-list.html">
+										<i class="icon-double-angle-right"></i>
+										Nestable Lists
+									</a>
+								</li>
+
+								<li>
+									<a href="#" class="dropdown-toggle">
+										<i class="icon-double-angle-right"></i>
+
+										Three Level Menu
+										<b class="arrow icon-angle-down"></b>
+									</a>
+
+									<ul class="submenu">
+										<li>
+											<a href="#">
+												<i class="icon-leaf"></i>
+												Item #1
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="dropdown-toggle">
+												<i class="icon-pencil"></i>
+
+												4th level
+												<b class="arrow icon-angle-down"></b>
+											</a>
+
+											<ul class="submenu">
+												<li>
+													<a href="#">
+														<i class="icon-plus"></i>
+														Add Product
+													</a>
+												</li>
+
+												<li>
+													<a href="#">
+														<i class="icon-eye-open"></i>
+														View Products
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="{{path('projectmanager_calendar')}}">
+								<i class="icon-calendar"></i>
+
+								<span class="menu-text">
+									Calendar
+									<span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
+										<i class="icon-warning-sign red bigger-130"></i>
+									</span>
+								</span>
+							</a>
+						</li>
+					</ul><!-- /.nav-list -->
+
+					<div class="sidebar-collapse" id="sidebar-collapse">
+						<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+					</div>
+
+					<script type="text/javascript">
+						try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+					</script>
+				</div>
+						<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="main-container-inner">
+				<a class="menu-toggler" id="menu-toggler" href="#">
+					<span class="menu-text"></span>
+				</a>
+			</div>
+				
