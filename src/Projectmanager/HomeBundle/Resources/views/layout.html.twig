@@ -2,18 +2,24 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!--<link href="{{asset('bundles/projectmanagerhome/css/style_div.css')}}" type="text/css" rel="stylesheet"/> -->
+	<link href="{{asset('bundles/projectmanagerhome/css/bootstrap.min.css')}}" rel="stylesheet" />
+	<link href="{{asset('bundles/projectmanagerhome/css/font-awesome.min.css')}}" rel="stylesheet"/>
+	<link rel="stylesheet"  href="{{asset('bundles/projectmanagerhome/css/ace.min.css')}}" />
+	<link rel="stylesheet"  href="{{asset('bundles/projectmanagerhome/css/ace-rtl.min.css')}}" />
+	<link rel="stylesheet"  href="{{asset('bundles/projectmanagerhome/css/ace-skins.min.css')}}" />
     <title>{% block title %}ProjectManager{% endblock %}</title>
   </head>
-  <body>
-	Twig, je suis ton père
-    {% block body %}
+  
+	<div class="navbar navbar-default" id="navbar">Twig, je suis ton père</div>
+	<body>
+	
+	{{ render(controller("ProjectmanagerHomeBundle:Pm:menu")) }}
+    
+	{% block body %}
 	Error : No Body block in son twig
     {% endblock %}
 
+{% include "ProjectmanagerHomeBundle:Pm:footer.html.twig" %}
   </body>
-  
-  {{ render(controller("ProjectmanagerHomeBundle:Pm:menu")) }}
-  
-	{% include "ProjectmanagerHomeBundle:Pm:footer.html.twig" %}
-  
 </html>
