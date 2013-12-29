@@ -4,3 +4,6 @@ projectmanager_homepage:
 projectmanager_seeproject:
     pattern:   /Projectmanager/project/{id}
     defaults:  { _controller: ProjectmanagerHomeBundle:Pm:seeProject }
+projectmanager_calendar:
+    pattern:   /Projectmanager/calendar/
+    defaults:  { _controller: ProjectmanagerHomeBundle:Pm:calendar }
