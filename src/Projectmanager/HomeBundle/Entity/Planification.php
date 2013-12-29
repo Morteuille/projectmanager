@@ -1,22 +1,32 @@
 <?php
 
-/**************************************************************************
-* Source File	:  Planification.php
-* Author                   :  etudiant etudiant
-* Project name         :  Non enregistré* Created                 :  21/11/2013
-* Modified   	:  21/11/2013
-* Description	:  Definition of the class Planification
-**************************************************************************/
+namespace Projectmanager\HomeBundle\Entity;
+use Doctrine\ORM\Mapping as ORM;
 
-
-
+/**
+* @ORM\Entity
+*/	
 
 class Planification 			
 {
 	//Attributes
 		
-	 
-	var $Event_Date; // type : string
+	 /**
+   * @ORM\Id
+   * @ORM\ManyToOne(targetEntity="Projectmanager\HomeBundle\Entity\Event")
+    */
+  private $event;
+
+ /**
+    * @ORM\Id
+   * @ORM\ManyToOne(targetEntity="Projectmanager\HomeBundle\Entity\User")
+  *     */
+  private $user;
+
+	/**
+	* @ORM\Column(name="Event_Date", type="datetime")
+	*/
+	var $Event_Date; // type : datetime
 
 	//Operations
 	 	

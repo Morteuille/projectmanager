@@ -10,11 +10,15 @@ use Doctrine\ORM\Mapping as ORM;
 class Action 			
 {
 	/**
-	* @ORM\Column(name="Action_ID", type="integer")
+	* @ORM\Column(name="id", type="integer")
 	* @ORM\Id
 	* @ORM\GeneratedValue(strategy="AUTO")
 	*/	 
-	private $Action_ID; // type : int
+	private $id; // type : int
+	 /**
+   	* @ORM\ManyToOne(targetEntity="Projectmanager\HomeBundle\Entity\Task")
+	*/
+	var $task;
 	/**
 	* @ORM\Column(name="Action_Name", type="string", length=255)
 	*/

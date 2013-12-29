@@ -1,26 +1,39 @@
 <?php
+namespace Projectmanager\HomeBundle\Entity;
+use Doctrine\ORM\Mapping as ORM;
 
-/**************************************************************************
-* Source File	:  Team.php
-* Author                   :  etudiant etudiant
-* Project name         :  Non enregistré* Created                 :  21/11/2013
-* Modified   	:  21/11/2013
-* Description	:  Definition of the class Team
-**************************************************************************/
-
-
-
+/**
+* @ORM\Entity
+*/
 
 class Team 			
 {
 	//Attributes
-		
+	/**
+	* @ORM\Column(name="id", type="string", length=255)
+	* @ORM\Id
+	*/	
 	 
-	var $Team_ID; // type : string
+	var $id; // type : string
+	/**
+	* @ORM\Column(name="Team_Name", type="string", length=255)
+	*/
+	
 	var $Team_Name; // type : string
-
+/**
+	 * @ORM\ManyToMany(targetEntity="Projectmanager\HomeBundle\Entity\User", cascade={"persist"})
+	 */
+	var $users;
 	//Operations
-	 	
+	   public function getTeam_Name()
+	{
+		return $this->Team_Name;
+	}
+	
+	public function setTeam_Name($Team_Name)
+	{
+		$this->Team_Name = $Team_Name;
+	}  		
 	 
 	
 
